@@ -58,22 +58,33 @@ body {
     center top/cover;
 }
 
-@media (min-width: 640px) and (min-height: 640px) {
-  .slide .content {
-    bottom: 70px;
-    left: -600px;
-    width: 600px;
-    padding: 2rem;
-    line-height: 1.6;
-  }
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+}
 
-  .slide .content h1 {
-    font-size: 2rem;
-  }
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
 
-  .slide.current .content {
-    transform: translateX(600px);
-  }
+.buttons button {
+  border: 2px solid #e5ebf3;
+  background-color: transparent;
+  color: #e5ebf3;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #e5ebf3;
+  color: #362a2b;
+}
+
 }
 </style>
 </head>
